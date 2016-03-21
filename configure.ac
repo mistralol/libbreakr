@@ -1,0 +1,30 @@
+AC_INIT(libbreakr, 1.0.0, james@stev.org)
+AC_CONFIG_AUX_DIR(config)
+AC_CONFIG_SRCDIR([src/asctime.c])
+AC_CONFIG_MACRO_DIR([m4])
+
+LT_INIT
+AM_INIT_AUTOMAKE([foreign])
+
+AC_PROG_CC
+AC_PROG_CC_STDC
+AM_PROG_CC_C_O
+AM_PROG_AS
+AC_PROG_LIBTOOL
+
+AM_DISABLE_STATIC
+
+m4_ifdef([AX_COMPILER_FLAGS],
+	[
+		AX_COMPILER_FLAGS([WARN_CFLAGS],[WARN_LDFLAGS])
+		AC_SUBST([AM_CXXFLAGS], $WARN_CXXFLAGS)
+	]
+,
+	[
+		AC_SUBST([AM_CXXFLAGS], ['-Wall -Werror'])
+	]
+)
+
+
+AC_OUTPUT(Makefile src/Makefile)
+
