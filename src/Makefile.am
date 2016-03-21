@@ -2,6 +2,81 @@
 lib_LTLIBRARIES=libbreakr.la
 
 libbreakr_la_LDFLAGS = -version-info 1:0:0
-libbreakr_la_SOURCES=asctime.c
-
+libbreakr_la_SOURCES=asctime.c \
+			crypt.c \
+			ctime.c \
+			drand48.c \
+			ecvt.c \
+			encrypt.c \
+			erand48.c \
+			ether_aton.c \
+			ether_ntoa.c \
+			fcvt.c \
+			fgetgrent.c \
+			fgetpwent.c \
+			fgetspent.c \
+			getaliasbyname.c \
+			getaliasent.c \
+			getdate.c \
+			getgrent.c \
+			getgrgid.c \
+			getgrnam.c \
+			gethostbyaddr.c \
+			gethostbyname2.c \
+			gethostbyname.c \
+			gethostent.c \
+			getlogin.c \
+			getmntent.c \
+			getnetbyaddr.c \
+			getnetbyname.c \
+			getnetent.c \
+			getnetgrent.c \
+			getprotobyname.c \
+			getprotobynumber.c \
+			getprotoent.c \
+			getpwent.c \
+			getpwnam.c \
+			getpwuid.c \
+			getrpcbyname.c \
+			getrpcbynumber.c \
+			getrpcent.c \
+			getservbyname.c \
+			getservbyport.c \
+			getservent.c \
+			getspent.c \
+			getspnam.c \
+			getutent.c \
+			getutid.c \
+			getutline.c \
+			gmtime.c \
+			hcreate.c \
+			hdestroy.c \
+			hsearch.c \
+			initstate.c \
+			jrand48.c \
+			lcong48.c \
+			lgammaf.c \
+			lgammal.c \
+			lgamma.c \
+			localtime.c \
+			lrand48.c \
+			mrand48.c \
+			nrand48.c \
+			ptsname.c \
+			qecvt.c \
+			qfcvt.c \
+			qsort.c \
+			random.c \
+			rand.c \
+			readdir.c \
+			seed48.c \
+			setkey.c \
+			setstate.c \
+			sgetspent.c \
+			srand48.c \
+			srandom.c \
+			strerror.c \
+			strtok.c \
+			tmpnam.c \
+			ttyname.c
 
