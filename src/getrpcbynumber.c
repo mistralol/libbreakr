@@ -1,9 +1,12 @@
 
+#include <config.h>
+#include <breakr.h>
+
 #include <stdlib.h>
 #include <netdb.h>
 
 struct rpcent *getrpcbynumber(int number)
 {
-	abort();
+	breakr_action(__FUNCTION__);
 }
 

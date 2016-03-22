@@ -25,6 +25,6 @@ m4_ifdef([AX_COMPILER_FLAGS],
 	]
 )
 
-
+AC_CONFIG_HEADERS([src/config.h:src/config.h.in])
 AC_OUTPUT(Makefile src/Makefile)
 

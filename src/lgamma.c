@@ -1,9 +1,12 @@
 
+#include <config.h>
+#include <breakr.h>
+
 #include <stdlib.h>
 #include <math.h>
 
 double lgamma(double x)
 {
-	abort();
+	breakr_action(__FUNCTION__);
 }
 

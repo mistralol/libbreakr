@@ -1,9 +1,12 @@
 
+#include <config.h>
+#include <breakr.h>
+
 #include <stdlib.h>
 #include <stdio.h>
 
 char *tmpnam(char *s)
 {
-	abort();
+	breakr_action(__FUNCTION__);
 }
 

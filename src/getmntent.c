@@ -1,10 +1,13 @@
 
+#include <config.h>
+#include <breakr.h>
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <mntent.h>
 
 struct mntent *getmntent(FILE *fp)
 {
-	abort();
+	breakr_action(__FUNCTION__);
 }
 

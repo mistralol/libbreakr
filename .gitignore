@@ -13,4 +13,6 @@ m4/
 *.o
 *.lo
 *.la
+src/config.h
+src/stamp-h1
 

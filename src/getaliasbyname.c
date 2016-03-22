@@ -1,9 +1,12 @@
 
+#include <config.h>
+#include <breakr.h>
+
 #include <stdlib.h>
 #include <aliases.h>
 
 struct aliasent *getaliasbyname(const char *name)
 {
-	abort();
+	breakr_action(__FUNCTION__);
 }
 

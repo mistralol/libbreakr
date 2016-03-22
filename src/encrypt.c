@@ -1,8 +1,12 @@
 
+#include <config.h>
+#include <breakr.h>
+
+
 #include <stdlib.h>
 
 void encrypt(char block[64], int edflag)
 {
-	abort();
+	breakr_action(__FUNCTION__);
 }
 

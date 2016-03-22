@@ -2,9 +2,7 @@
 #include <config.h>
 #include <breakr.h>
 
-#include <stdlib.h>
-
-char *setstate(char *state)
+void breakr_action(const char *function)
 {
 	breakr_action(__FUNCTION__);
 }

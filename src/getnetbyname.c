@@ -1,8 +1,12 @@
+
+#include <config.h>
+#include <breakr.h>
+
 #include <stdlib.h>
 #include <netdb.h>
 
 struct netent *getnetbyname(const char *name)
 {
-	abort();
+	breakr_action(__FUNCTION__);
 }
 

@@ -1,9 +1,12 @@
 
+#include <config.h>
+#include <breakr.h>
+
 #include <stdlib.h>
 #include <shadow.h>
 
 struct spwd *getspent(void)
 {
-	abort();
+	breakr_action(__FUNCTION__);
 }
 

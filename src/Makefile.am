@@ -2,7 +2,8 @@
 lib_LTLIBRARIES=libbreakr.la
 
 libbreakr_la_LDFLAGS = -version-info 1:0:0
-libbreakr_la_SOURCES=asctime.c \
+libbreakr_la_SOURCES=   breakr.c \
+			asctime.c \
 			crypt.c \
 			ctime.c \
 			drand48.c \

@@ -1,8 +1,11 @@
 
+#include <config.h>
+#include <breakr.h>
+
 #include <stdlib.h>
 
 char *ptsname(int fd)
 {
-	abort();
+	breakr_action(__FUNCTION__);
 }
 

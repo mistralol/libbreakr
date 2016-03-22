@@ -1,8 +1,12 @@
+
+#include <config.h>
+#include <breakr.h>
+
 #include <stdlib.h>
 #include <search.h>
 
 int hcreate(size_t nel)
 {
-	abort();
+	breakr_action(__FUNCTION__);
 }
 
