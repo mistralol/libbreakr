@@ -60,3 +60,6 @@
 
 /* Version number of package */
 #undef VERSION
+
+/* Use _GNU_SOURCE */
+#undef _GNU_SOURCE
