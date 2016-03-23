@@ -1,7 +1,7 @@
 
 lib_LTLIBRARIES=libbreakr.la
 
-libbreakr_la_LDFLAGS = -version-info 1:0:0
+libbreakr_la_LDFLAGS = -version-info 1:0:0 -ldl
 libbreakr_la_SOURCES=   breakr.c \
 			pthread_create.c \
 			fork.c \

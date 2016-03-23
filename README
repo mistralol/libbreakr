@@ -9,8 +9,8 @@ BREAKR_MODE=0 LD_PRELOAD=libbreakr.so ./app
 Where BREAKR_MODE is setup as the following.
 
 0 = Disable
-1 = LOG
-2 = SYSLOG
+1 = LOG to stderr
+2 = LOG to syslog
 3 = ABORT
 
 

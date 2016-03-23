@@ -10,7 +10,6 @@ int pthread_create(pthread_t *thread, const pthread_attr_t *attr, void *(*start_
 {
 	static pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;
 	static int (*func) (pthread_t *thread, const pthread_attr_t *attr, void *(*start_routine) (void *), void *arg) = NULL;
-	breakr_action(__FUNCTION__);
 	
 	if (func == NULL)
 	{
