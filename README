@@ -1,0 +1,16 @@
+
+A utility library design to flush out usage of non thread safe glibc functions
+which should be replaced by using the _r versions of the function.
+
+To use run the application usnig LD_PRELOAD
+
+BREAKR_MODE=0 LD_PRELOAD=libbreakr.so ./app
+
+Where BREAKR_MODE is setup as the following.
+
+0 = Disable
+1 = LOG
+2 = SYSLOG
+3 = ABORT
+
+
