@@ -2,7 +2,9 @@
 A utility library design to flush out usage of non thread safe glibc functions
 which should be replaced by using the _r versions of the function.
 
-To use run the application usnig LD_PRELOAD
+This tool can either be run with LD_PRELOAD or be linked to the program at compile time.
+
+For example
 
 BREAKR_MODE=0 LD_PRELOAD=libbreakr.so ./app
 
