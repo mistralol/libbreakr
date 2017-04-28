@@ -22,7 +22,7 @@ void breakr_activate()
 	const char *str = getenv("BREAKR_MODE");
 	if (str == NULL)
 	{
-		active == LOG;
+		active = LOG;
 	}
 	else
 	{
