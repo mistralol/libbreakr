@@ -71,7 +71,6 @@ libbreakr_la_SOURCES=   breakr.c \
 			qsort.c \
 			random.c \
 			rand.c \
-			readdir.c \
 			seed48.c \
 			setkey.c \
 			setstate.c \
